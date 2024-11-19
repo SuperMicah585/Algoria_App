@@ -1,5 +1,5 @@
 import './App.css';
-import { client, processRecords } from './client';
+import { client } from './client';
 import 'instantsearch.css/themes/satellite.css';
 
 import {
@@ -82,7 +82,7 @@ function App() {
                       </div>
                       <div className="font-thin text-xs">{hit.description}</div>
                       <div>
-                        <img src={hit.image} alt="Description of the image" />
+                        <img src={hit.image}/>
                       </div>
                     </div>
                   )}
